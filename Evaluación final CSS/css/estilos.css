@@ -7,26 +7,40 @@ header{
   color: white;
   border-radius: 10px 10px 0 0;
   display: flex;
-  height: 15%;
+  padding: 3%;
+}
+.contenido{
+  margin: 0;
+  padding: 0;
+  max-width: 900px;
+  text-align: center;
+}
+@media all and (max-width: 900px){
+  h1{width: 100%; order:1;}
+  li{width: 100%; order:2;}
+  .imagenprincipal img #imagen1{width: 100%; order: 3;}
+  #imagen2 {width: 100%; order:4;}
+  #imagen3 {width: 100%; order:5;}
+  .contacto{width: 100%; order:6;}
+  .terminos{width: 100%; order:7;}
+  .redessociales{width: 100%; order:8;}
+  .derechos{width: 100%; order:9;}
 }
 header h1{
   text-shadow: 2px 2px 0 #02010a;
   width: 50%;
-  margin-left: 2%;
+  margin: auto;
 }
 header ul{
   display: flex;
-  position: absolute;
-  right: 0;
   width: 30%;
-  height: 10%;
-
+  margin: auto;
 }
 header li{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 15%;
+  margin: auto;
   font-size: 1.5em;
 }
 li a{
@@ -38,24 +52,28 @@ a:hover{
 }
 .imagenprincipal{
   background: #82c3a6;
-  text-align: center;
+  margin: auto;
 }
 .imagene2y3{
   background: #d5c75f;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 .imagene2y3 div{
   width: 50%;
   text-align: center;
+
 }
 #imagen1{
   width: 70%;
+  height: auto;
   padding: 2%;
   filter: drop-shadow(2px 2px 2px #02010a);
 }
 #imagen2{
   width: 80%;
+  height: auto;
   filter: drop-shadow(2px 2px 2px #02010a);
   margin: 5%;
 }
@@ -65,6 +83,7 @@ a:hover{
 }
 #imagen3{
   width: 80%;
+  height: auto;
   filter: drop-shadow(2px 2px 2px #02010a);
   margin: 5%;
 }
@@ -77,10 +96,11 @@ footer{
   display: flex;
   border-radius: 0 0 10px 10px;
   background: #C6d5c5;
+  flex-flow: row wrap;
 }
 footer div{
   width: 25%;
-  margin-left: 5%;
+  margin: auto;
 }
 footer img{
   width: 5%;

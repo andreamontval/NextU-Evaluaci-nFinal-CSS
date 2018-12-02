@@ -7,25 +7,22 @@ header{
   color: white;
   border-radius: 10px 10px 0 0;
   display: flex;
-  padding: 3%;
+  padding: 4%;
 }
+@keyframes movimientoheader {
+  0%{position: relative;margin-top: 150%;}
+  60%{position: relative;margin-top: -5%;}
+  100%{position: relative;margin-top: 0%;}
+}
+header{animation-name: movimientoheader;
+animation-duration: 1s;}
 .contenido{
-  margin: 0;
+  margin: auto;
   padding: 0;
   max-width: 900px;
   text-align: center;
 }
-@media all and (max-width: 900px){
-  h1{width: 100%; order:1;}
-  li{width: 100%; order:2;}
-  .imagenprincipal img #imagen1{width: 100%; order: 3;}
-  #imagen2 {width: 100%; order:4;}
-  #imagen3 {width: 100%; order:5;}
-  .contacto{width: 100%; order:6;}
-  .terminos{width: 100%; order:7;}
-  .redessociales{width: 100%; order:8;}
-  .derechos{width: 100%; order:9;}
-}
+
 header h1{
   text-shadow: 2px 2px 0 #02010a;
   width: 50%;
@@ -63,7 +60,6 @@ a:hover{
 .imagene2y3 div{
   width: 50%;
   text-align: center;
-
 }
 #imagen1{
   width: 70%;
@@ -104,4 +100,130 @@ footer div{
 }
 footer img{
   width: 5%;
+}
+@media all and (max-width: 900px){
+  body{
+    background: #02010a;
+    font-family: Dancing Script;
+  }
+  header{
+    background-color:  #5b7989;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+  }
+  .contenido{
+    margin: auto;
+    padding: 0;
+    max-width: 95%;
+  }
+
+  header h1{
+    text-shadow: 2px 2px 0 #02010a;
+    width: 50%;
+    margin: auto;
+  }
+  header ul{
+    padding: 1%;
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+
+  .imagenprincipal{
+    background: #82c3a6;
+    margin: auto;
+    width: 100%;
+  }
+  .imagene2y3{
+    background: #d5c75f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .imagene2y3 div{
+    width: 100%;
+    text-align: center;
+  }
+  #imagen1{
+    width: 90%;
+    height: auto;
+    padding: 2%;
+    filter: drop-shadow(2px 2px 2px #02010a);
+  }
+  #imagen2{
+    width: 80%;
+    height: auto;
+    filter: drop-shadow(2px 2px 2px #02010a);
+    margin: 5%;
+  }
+  #imagen2:hover{
+    transform: rotate(10deg);
+    filter: drop-shadow(2px 2px 2px #82c3a6);
+  }
+  #imagen3{
+    width: 80%;
+    height: auto;
+    filter: drop-shadow(2px 2px 2px #02010a);
+    margin: 5%;
+  }
+  #imagen3:hover{
+    transform: translate(20px,-5px);
+    filter: drop-shadow(2px 2px 2px #82c3a6);
+  }
+  footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 10px 10px;
+    background: #C6d5c5;
+    margin: auto;
+
+  }
+  footer div{
+    width: 50%;
+    margin: auto;
+  }
+  footer img{
+    width: 10%;
+  }
+}
+
+.galeriadepaisajes{
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  background: #d5c75f;
+}
+.galeriadepaisajes div{
+  width: 30.3%;
+  height: auto;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 2%;
+}
+.galeriadepaisajes div img{
+  width: 100%;
+  margin: auto;
+}
+#paisaje1,#retrato1{
+  filter: blur(10px);
+}
+#paisaje2,#paisaje4,#paisaje6,#retrato2,#retrato4,#retrato6{
+  filter: grayscale(100%);
+}
+#paisaje3,#retrato3{
+  filter: sepia(90%);
+}
+@media all and (max-width: 900px){
+  .galeriadepaisajes div{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 2%;
+  }
 }

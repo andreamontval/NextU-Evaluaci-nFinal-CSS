@@ -1,6 +1,9 @@
+body{
+  background: #02010a;
+  font-family: Dancing Script;
+}
 header{
   background-color:  #5b7989;
-  font-family: pacifico;
   color: white;
   border-radius: 10px 10px 0 0;
   display: flex;
@@ -28,4 +31,57 @@ header li{
 }
 li a{
   color: white;
+
+}
+a:hover{
+  text-decoration: none;
+}
+.imagenprincipal{
+  background: #82c3a6;
+  text-align: center;
+}
+.imagene2y3{
+  background: #d5c75f;
+  display: flex;
+  align-items: center;
+}
+.imagene2y3 div{
+  width: 50%;
+  text-align: center;
+}
+#imagen1{
+  width: 70%;
+  padding: 2%;
+  filter: drop-shadow(2px 2px 2px #02010a);
+}
+#imagen2{
+  width: 80%;
+  filter: drop-shadow(2px 2px 2px #02010a);
+  margin: 5%;
+}
+#imagen2:hover{
+  transform: rotate(10deg);
+  filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+#imagen3{
+  width: 80%;
+  filter: drop-shadow(2px 2px 2px #02010a);
+  margin: 5%;
+}
+#imagen3:hover{
+  transform: translate(20px,-5px);
+  filter: drop-shadow(2px 2px 2px #82c3a6);
+}
+footer{
+  width: 100%;
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  background: #C6d5c5;
+}
+footer div{
+  width: 25%;
+  margin-left: 5%;
+}
+footer img{
+  width: 5%;
 }
